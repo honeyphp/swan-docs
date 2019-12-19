@@ -3246,6 +3246,24 @@
                   link: /develop/plugins/limit_components
                   text: 插件中组件的限制
                   name: limit_components
+                -
+                  link: /develop/plugins/functional_pages
+                  text: 插件功能页
+                  name: functional_pages
+                  sidebar:
+                    -
+                      link: /develop/plugins/functional_pages/user
+                      text: 用户信息功能页
+                      name: functional_pages_user
+                    -
+                      link: /develop/plugins/functional_pages/payment
+                      text: 支付功能页
+                      name: functional_pages_payment
+                    -
+                      link: /develop/plugins/functional_pages/address
+                      text: 收货地址功能页
+                      name: functional_pages_address
+
     
     -
       link: /develop/third/pro
