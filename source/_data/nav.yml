@@ -3247,7 +3247,7 @@
                   text: 插件中组件的限制
                   name: limit_components
                 -
-                  link: /develop/plugins/functional_pages
+                  link: /develop/plugins/functional_pages/info
                   text: 插件功能页
                   name: functional_pages
                   sidebar:
