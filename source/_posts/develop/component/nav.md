@@ -111,3 +111,66 @@ Page({
     }
 });
 ```
+
+## functional-page-navigator
+
+**解释**：仅在插件中有效，用于跳转到插件功能页。基础库 v3.120.0 开始支持，低版本需做[兼容处理](https://smartprogram.baidu.com/docs/develop/swan/compatibility/)。
+
+###  属性说明 
+
+| 属性名 | 类型  | 默认值  | 必填 | 说明 | 最低版本 |
+| :---- | :---- | :---- |:---- | :---- | :---- |
+| version | String | release | 否 | 跳转到的小程序版本，线上版本必须为正式版 | 3.120.0 |
+| name | String |  | 否 | 要跳转到的功能页 | 3.120.0 |
+| args | Object |  | 否 | 功能页参数，参数格式与具体功能页相关 | 3.120.0 |
+| bindsuccess | EventHandle |  | 否 | 功能页返回，且操作成功时触发，detail格式与具体功能页相关 | 3.120.0 |
+| bindfail | EventHandle |  | 否 | 功能页返回，且操作失败时触发，detail格式与具体功能页相关 | 3.120.0 |
+
+#### version 有效值
+
+| 值 | 说明 | 最低版本 |
+|---|---|---|
+| develop | 开发版 | 3.120.0 |
+| trial | 体验版 | 3.120.0 |
+| release | 正式版 | 3.120.0 |
+
+#### name 有效值
+
+| 值 | 说明 | 最低版本 |
+|---|---|---|
+| loginAndGetUserInfo | [用户信息功能页](/develop/plugins/functional_pages/user/) | 3.120.0 |
+| requestPayment | [支付功能页](/develop/plugins/functional_pages/payment/) | 3.120.0 |
+| chooseAddress | [收获地址功能页](/develop/plugins/functional_pages/address/) | 3.120.0 |
+
+
+### Bug & Tip
+
+* Tip: 功能页是插件所有者小程序中的一个特殊页面，开发者不能自定义这个页面的外观。
+
+* Tip: 这个组件本身可以在开发者工具中使用，但功能页的跳转目前不支持在开发者工具中调试，请在真机上测试。
+
+
+### 示例代码
+
+```xml
+<functional-page-navigator
+    name="loginAndGetUserInfo"
+    version="develop"
+    bind:success="loginSuccess"
+    bind:fail="loginFail">
+    <button class="login">登录到插件</button>
+</functional-page-navigator>
+```
+
+```js
+Component({
+  methods: {
+    loginSuccess: function (res) {
+      console.log(res);
+    },
+    loginFail: function (res) {
+      console.log(res);
+    }
+  }
+});
+```
