@@ -16,7 +16,6 @@ args参数说明：
 |----|----|----|----|
 |fee|Number|是|需要显示在页面中的金额，单位为分|
 |paymentArgs|Object|否|任意数据，传递给功能页中的响应函数|
-|currencyType|String|否|需要显示在页面中的货币符号的代码，默认为 CNY|
 
 代码示例：
 
