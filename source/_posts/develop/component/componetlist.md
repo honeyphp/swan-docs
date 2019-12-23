@@ -33,6 +33,7 @@ sidebar:  componetlist
 |<a href="https://smartprogram.baidu.com/docs/develop/component/formlist/#switch/">switch</a>|开关选择器|
 |<a href="https://smartprogram.baidu.com/docs/develop/component/formlist/#textarea/">textarea</a>| 多行输入框|
 |<a href="https://smartprogram.baidu.com/docs/develop/component/nav/#navigator/">navigator</a>|页面链接|
+|<a href="/develop/component/nav/#functional-page-navigator/">functional-page-navigator</a>|插件功能页跳转|
 |<a href="https://smartprogram.baidu.com/docs/develop/component/media/#audio/">audio</a>|音频|
 |<a href="https://smartprogram.baidu.com/docs/develop/component/media/#image/">image</a>|图片|
 |<a href="https://smartprogram.baidu.com/docs/develop/component/media/#video/">video</a>|视频|

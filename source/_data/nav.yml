@@ -947,6 +947,10 @@
                     link: /develop/component/nav/#navigator
                     text: navigator
                     name: nav_navigator
+                  -
+                    link: /develop/component/nav/#functional-page-navigator
+                    text: functional-page-navigator
+                    name: nav_functional-page-navigator
         -
             sidebar:
               -
